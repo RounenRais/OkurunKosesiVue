@@ -1,0 +1,354 @@
+.myNav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	box-shadow: 1px 1px 1px 1px white;
+}
+
+.qt {
+	display: flex;
+}
+
+body {
+	width: 100%;
+	background-color: #333;
+}
+
+.navActions {
+	display: flex;
+	gap: 10px;
+}
+
+.navHeader {
+	color: white;
+}
+
+.navLink {
+	text-decoration: none;
+	color: white
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+/* Giriş Bölümü */
+.intro {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.gameLink {
+	text-decoration: none;
+	color: white;
+	margin-top: 25px;
+}
+
+.gameImg2 {
+	transform: rotateY(180deg)
+}
+
+.showPoints {
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.table {
+	border: 2px solid black;
+	width: 100px;
+}
+
+.rowH {
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gamesLink {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Giriş Bölümü Bitiş */
+
+/* Video Konumlandırma */
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #333;
+	z-index: -1;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+/* Video Konumlandırma Bitiş */
+
+/* Karartma Efekti */
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+/* Karartma Efekti Bitiş */
+
+.content {
+	z-index: 2;
+}
+
+.read-more {
+	display: inline-block;
+	padding: 10px 30px;
+	background: #333;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.8;
+	transition: .2s all;
+	text-decoration: none;
+}
+
+.read-more:hover {
+	transform: scale(.9);
+}
+
+#page {
+	padding: 40px;
+	text-align: center;
+}
+
+#page p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+input {
+	width: 300px;
+	height: 50px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	background:
+		linear-gradient(grey, grey) top /calc(100% - 30px) 1px,
+		linear-gradient(grey, grey) bottom/calc(100% - 30px) 1px,
+		linear-gradient(grey, grey) left /1px calc(100% - 30px),
+		linear-gradient(grey, grey) right /1px calc(100% - 30px),
+
+		linear-gradient(to bottom right,
+			transparent calc(50% - 1px), grey, transparent calc(50% + 1px)) top left/15px 15px,
+		linear-gradient(to bottom right,
+			transparent calc(50% - 1px), grey, transparent calc(50% + 1px)) bottom right/15px 15px,
+		linear-gradient(to bottom left,
+			transparent calc(50% - 1px), grey, transparent calc(50% + 1px)) top right/15px 15px,
+		linear-gradient(to bottom left,
+			transparent calc(50% - 1px), grey, transparent calc(50% + 1px)) bottom left/15px 15px;
+
+	background-repeat: no-repeat;
+}
+
+.check {
+	background-color: red;
+	padding-inline: 30px;
+	border-radius: 6px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.char {
+	width: 72px;
+	height: 64px;
+	text-align: center;
+	font-size: larger;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.container {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.space {
+	width: 50px;
+}
+
+.fa-crown {
+	transform: rotate(-45deg);
+	position: absolute;
+	bottom: 15px;
+	color: gold;
+	left: -15px;
+	padding: 5px;
+}
+
+.name {
+	display: flex;
+	position: relative;
+
+}
+
+.a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.container {
+	display: flex;
+	gap: 10px;
+}
+
+.welcomeImg {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.getQuestion {
+	padding: 10px;
+	cursor: pointer;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.container {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.table {
+	width: 100%;
+	border: 1px solid #EEEEEE;
+	padding: 10px;
+}
+
+.row {
+	border: 2px solid rgb(0, 0, 0);
+	padding: 10px;
+}
+
+.rowH {
+	border: 2px solid rgb(0, 0, 0);
+	padding: 10px;
+}
+
+.harfButton{
+	padding: 10px;
+}
+.harfler{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tip_point {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 250px;
+	padding-right: 30px;
+}
+
+.firstArea {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.startButton{
+	padding: 10px;
+	cursor: pointer;
+}
