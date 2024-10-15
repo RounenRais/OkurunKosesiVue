@@ -27,12 +27,7 @@ const router = createRouter({
      
       component: () => import('../views/getBook.vue')
     },
-    {
-      path: '/contact',
-      name: 'contact',
-     
-      component: () => import('../views/contact.vue')
-    },
+    
     {
       path: '/kelimeOyunu',
       name: 'kelimeOyunu',
