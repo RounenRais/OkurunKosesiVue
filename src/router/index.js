@@ -19,7 +19,7 @@ const router = createRouter({
       path: '/games',
       name: 'games',
      
-      component: () => import('../views/games.vue')
+      component: () => import('../views/myGame.vue')
     },
     {
       path: '/getBooks',
@@ -39,6 +39,12 @@ const router = createRouter({
       name: 'adamAsmaca',
      
       component: () => import('../views/games/adamAsmaca.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+     
+      component: () => import('../views/Contact.vue')
     },
   ]
 })
