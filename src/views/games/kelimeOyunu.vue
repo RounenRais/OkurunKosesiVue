@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, nextTick } from 'vue';
-
+import axios from "axios";
 </script>
 <template>
   <!-- <input v-model="chars.kelime" type="text">
@@ -62,7 +62,7 @@ import { ref, nextTick } from 'vue';
   </div>
 </template>
 <script>
-import axios from "axios";
+
 
 export default {
 
