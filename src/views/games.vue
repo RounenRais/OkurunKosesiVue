@@ -1,8 +1,4 @@
-<script setup>
-import axios from 'axios';
-import { RouterLink, RouterView } from 'vue-router'
 
-</script>
 <template>
 <body>
     
@@ -22,6 +18,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </div>
    
 </main>
+
+import axios from 'axios';
+import { RouterLink, RouterView } from 'vue-router'
+
 
 <div class="showPoints">
       <div class="game1">
@@ -49,7 +49,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </body>
    </template>
    <script>
-export default{
+   export default{
    data(){
       return{
          nameK:"",
